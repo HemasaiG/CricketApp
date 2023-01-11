@@ -1,0 +1,11 @@
+li{
+  display: flex;
+}
+
+.navbar{
+  background-color: #515f8b;
+}
+
+.routerlinkactive{
+  background-color: aqua;
+}

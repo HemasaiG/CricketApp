@@ -1,0 +1,21 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col--sm-7">
+    <button class="btn-primary col-sm-2" [class.active]="filterBy==='all'" (click)="filterBy='all'">All</button>
+    <button class="btn-primary col-sm-2" [class.active]="filterBy==='india'" (click)="filterBy='india'">India</button>
+    <button class="btn-primary col-sm-2" [class.active]="filterBy==='australia'" (click)="filterBy='australia'">Australia</button>
+    <button class="btn-primary col-sm-2" [class.active]="filterBy==='england'" (click)="filterBy='england'">England</button>
+    <button class="btn-primary col-sm-2" [class.active]="filterBy==='others'" (click)="filterBy='others'">Others</button>
+    </div>
+    <div class="coll-sm-5">
+        <button [class.active]="sortBy==='default'" (click)="sortBy='default'">Default</button>
+        <button [class.active]="sortBy==='name'" (click)="sortBy='name'">By Name</button>
+        <button [class.active]="sortBy==='runs'" (click)="sortBy='runs'">By Runs</button>
+
+  </div>
+</div>
+
+
+
+
+<app-player-list [filterBy]="filterBy" [sortBy]="sortBy"></app-player-list>

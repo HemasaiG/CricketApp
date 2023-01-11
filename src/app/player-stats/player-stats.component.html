@@ -1,0 +1,27 @@
+
+<div class="container">
+  <h1>{{matchedPlayer.name}}</h1>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th scope="col"></th>
+        <th scope="col">Stats</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Matches</th>
+        <td>{{matchedPlayer.stats.battingStats.matches}}</td></tr>
+      <tr>
+        <th scope="row">Runs</th>
+        <td>{{matchedPlayer.stats.battingStats.runs}}</td>
+      </tr>
+      <tr>
+        <th scope="row">Highest</th>
+        <td>{{matchedPlayer.stats.battingStats.highest}}</td></tr>
+      <tr>
+
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,12 @@
+<div class="container-fluid my-3">
+  <div class="row" *ngFor="let player of visiblePlayers">
+
+    <app-player-details class="well" [name]="player.name">
+      <p>{{player.country}}</p>
+      <p>{{player.born}}</p>
+      <p>{{player.role}}</p>
+      <p>{{player.iplTeam}}</p>
+      <button class="btn btn-sm btn-info text-light" [routerLink]="['/stats',player.id]">Full Details</button>
+    </app-player-details>
+  </div>
+</div>
